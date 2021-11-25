@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.MainController">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="309.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="296.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="295.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="149.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Nombre de couleurs" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="149.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ComboBox fx:id="mainWinCombobox" prefWidth="125.0" style="-fx-alignment: center;" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="149.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="changeNumberConfirm" mnemonicParsing="false" text="Changer" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="149.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="converter" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Convertir" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="hexaRgbButton" mnemonicParsing="false" text="Button" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="helpButton" alignment="BOTTOM_RIGHT" mnemonicParsing="false" text="Besoin d'aide?" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox fx:id="h1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="14.0" layoutY="8.0" text="Couleur 1:" />
+                                          <ColorPicker fx:id="colorPick1" layoutX="92.0" layoutY="4.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="7.0" text="Couleur 2:" />
+                                          <ColorPicker fx:id="colorPick2" layoutX="92.0" layoutY="3.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="Couleur 3:" />
+                                          <ColorPicker fx:id="colorPick3" layoutX="91.0" layoutY="4.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="Couleur 4:" />
+                                          <ColorPicker fx:id="colorPick4" layoutX="92.0" layoutY="2.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="7.0" text="Couleur 5:" />
+                                          <ColorPicker fx:id="colorPick5" layoutX="92.0" layoutY="3.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="8.0" text="Couleur 6:" />
+                                          <ColorPicker fx:id="colorPick6" layoutX="92.0" layoutY="4.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="10.0" text="Couleur 7:" />
+                                          <ColorPicker fx:id="colorPick7" layoutX="92.0" layoutY="6.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="11.0" text="Couleur 8:" />
+                                          <ColorPicker fx:id="colorPick8" layoutX="92.0" layoutY="4.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="Couleur 9:" />
+                                          <ColorPicker fx:id="colorPick9" layoutX="92.0" layoutY="6.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="h10" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="153.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="Couleur 10:" />
+                                          <ColorPicker fx:id="colorPick10" layoutX="92.0" layoutY="2.0" prefHeight="25.0" prefWidth="47.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="296.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="297.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="vboxConvertedColor1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="145.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 1" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor11" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor11" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor12" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor12" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor13" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor13" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor14" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor14" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor15" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor15" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="145.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 2" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor21" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor21" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="50.0" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin></Separator>
+                              <VBox fx:id="vboxConvertedColor22" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor22" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="50.0" VBox.vgrow="ALWAYS" />
+                              <VBox fx:id="vboxConvertedColor23" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor23" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor24" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor24" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor25" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor25" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 3" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor31" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor31" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor32" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor32" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor33" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor33" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor34" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor34" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor35" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor35" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 4" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor41" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor41" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor42" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor42" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor43" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor43" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor44" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor44" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor45" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor45" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 5" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor51">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor51" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor52">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor52" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor53">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor53" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor54">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor54" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor55">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor55" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="297.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="vboxConvertedColor6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 6" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor61" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor61" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor62" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor62" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor63" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor63" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor64" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor64" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor65" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor65" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 7" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor71" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor71" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor72" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor72" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor73" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor73" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor74" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor74" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor75" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor75" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="vboxConvertedColor8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 8" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor81" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor81" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor82" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor82" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor83" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor83" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor84" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor84" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor85" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor85" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="vboxConvertedColor9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 9" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor91" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor91" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor92" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor92" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor93" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor93" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor94" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor94" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor95" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor95" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox fx:id="vboxConvertedColor10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="60.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="51.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Couleur 10" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox fx:id="vboxConvertedColor101" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor101" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor102" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor102" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor103" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor103" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor104" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor104" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Separator prefWidth="200.0" />
+                              <VBox fx:id="vboxConvertedColor105" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tfConvertedColor105" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefHeight="0.0" prefWidth="600.0" />
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" prefHeight="87.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="leftColorVbox1" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox2" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox3" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox4" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox5" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox6" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox7" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox8" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox9" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftColorVbox10" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="10.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Label fx:id="leftLabel1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="3" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="4" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="5" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="6" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="7" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="8" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="9" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="leftLabel10" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="10" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="leftGreyVbox1" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox2" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox3" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox4" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox5" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox6" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox7" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox8" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox9" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="leftGreyVbox10" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="87.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="rightColorVbox1" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox2" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox3" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox4" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox5" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox6" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox7" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox8" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox9" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightColorVbox10" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="10.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="rightLabel1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="3" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="4" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="5" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="6" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="7" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="8" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="9" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="rightLabel10" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="10" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="rightGreyVbox1" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox2" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox3" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox4" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox5" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox6" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox7" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox8" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox9" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="rightGreyVbox10" prefHeight="50.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

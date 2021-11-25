@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.HelpController">
+   <children>
+      <ColorPicker fx:id="helpColorPicker" layoutX="701.0" layoutY="108.0" prefHeight="25.0" prefWidth="48.0" />
+      <Text layoutX="279.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="687.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elements visés" />
+      <TextArea editable="false" layoutX="16.0" layoutY="153.0" prefHeight="73.0" prefWidth="587.0" text="Si vos vouleurs ont des nuances de gris trop proches &#10;et quasi non distingable, cliquez sur le bouton Convertir, l'appli vous&#10;conseillera donc de nouvelles couleurs pour celle qu'elle juge trop proche" />
+      <TextArea editable="false" layoutX="16.0" layoutY="101.0" prefHeight="38.0" prefWidth="587.0" text="Choisissez vos couleurs avec les Selecteurs de Couleur correspondants" />
+      <Button layoutX="693.0" layoutY="177.0" mnemonicParsing="false" text="Convertir" />
+      <TextArea editable="false" layoutX="16.0" layoutY="234.0" prefHeight="152.0" prefWidth="587.0" text="Une fois cliqué sur le bouton évoqué sur l'astuce précédante, vous &#10;avez les couleurs choisient par l'applis avec leur valeur RGB.&#10;Cliquez avec la molette sur la couleur que vous voulez pour la faire passer&#10;en dessus dans l'espace de démo (en bas à droite)&#10;Si vous voulez les valeurs de ces couleurs en Hexadécimale clique sur le&#10;bouton &quot;Passer en Hexa&quot;, pour les re-avoir les valeurs RGB recliquez&#10;sur ce buton alors renommé &quot;Passer en RGB&quot;&#10;Astuce: RGB(Red Green Blue)équivaut à RVB(Rouge Vert Bleu)" />
+      <TextField fx:id="helpTextfield" alignment="CENTER" editable="false" layoutX="656.0" layoutY="266.0" prefHeight="25.0" prefWidth="140.0" text="255,255,255" />
+      <Button fx:id="helpHexaRgbButton" layoutX="678.0" layoutY="310.0" mnemonicParsing="false" text="Passer en Hexa" />
+      <Separator layoutX="600.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextArea editable="false" layoutX="16.0" layoutY="42.0" prefHeight="50.0" prefWidth="587.0" text="Si vous voulez re-changer le nombre de couleur, selectionnez le nombre&#10;voulus avec le menu déroulant et cliquez sur le bouton &quot;changer&quot;" />
+      <Button layoutX="695.0" layoutY="67.0" mnemonicParsing="false" text="Changer" />
+      <ComboBox fx:id="helpComboBox" layoutX="668.0" layoutY="30.0" prefHeight="25.0" prefWidth="115.0" />
+      <Separator layoutY="96.0" prefHeight="3.0" prefWidth="850.0" />
+      <Separator layoutY="145.0" prefHeight="3.0" prefWidth="850.0" />
+      <Separator layoutY="228.0" prefHeight="3.0" prefWidth="850.0" />
+   </children>
+</AnchorPane>
